@@ -59,11 +59,17 @@ Envoyer des messages :
 
 exemple de sorti
    "Instanciation de l'objet QTcpSocket"
+  
    "Connexion au serveur" "172.20.10.13" : 8000
+   
    "Connecté au serveur à l'adresse :" "172.20.10.13"
+   
    "Port du serveur :" 8000
+   
    "Entrez un message à envoyer :"
+   
    "Message reçu :" "gdgd\n"
+   
    "Message reçu :" "gg\n"
 
 
