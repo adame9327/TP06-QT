@@ -33,10 +33,13 @@ Cloner le dépôt :
 git clone https://github.com/votre-utilisateur/Projet_clientTCP.git
 
  cd Projet_clientTCP
+
 Configurer le projet avec Qt Creator :
-Ouvrez le fichier clientTCP.pro
- dans Qt Creator.
+
+Ouvrez le fichier clientTCP.pro  dans Qt Creator.
+
 Configurez un kit de développement (compilateur et version de Qt).
+
 Compiler :
 
 Utilisez loption de compilation dans Qt Creator, ou exécutez : qmake && make
@@ -58,6 +61,7 @@ Envoyer des messages :
     Les messages reçus du serveur seront affichés dans la console.
 
 exemple de sorti
+  
    "Instanciation de l'objet QTcpSocket"
   
    "Connexion au serveur" "172.20.10.13" : 8000
