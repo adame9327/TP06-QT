@@ -72,13 +72,14 @@ Connexion au serveur
 
 Dans le fichier client.cpp, la méthode suivante initie la connexion au serveur :
 -----------------------------------------------------------------------------------------------------
-'''cpp
+``cpp
 void Client::demarrer()  
 {  
     qDebug() << QString::fromUtf8("Connexion au serveur") << serverIp << ":" << PORT_SERVEUR;  
     tcpSocket->connectToHost(serverIp, PORT_SERVEUR);  
 }  
-'''
+``
+
 -----------------------------------------------------------------------------------------------------
 
 
@@ -86,7 +87,7 @@ Envoi d'un message
 
 Le client lit un message depuis la console et l'envoie au serveur :
 ----------------------------------------------------------------------------------
-'''cpp
+```cpp
 void Client::envoyer()  
 {  
     if (tcpSocket->state() == QAbstractSocket::ConnectedState)  
@@ -107,19 +108,19 @@ void Client::envoyer()
         qDebug() << QString::fromUtf8("La socket n'est pas connectée !");  
     }  
 }  
-'''
+```
 ----------------------------------------------------------------------------------
 Réception d'un message
 
 Le client gère les messages reçus avec la méthode suivante :
 ----------------------------------------------------------------------------------
-'''cpp
+```cpp
 void Client::recevoir()  
 {  
     QByteArray data = tcpSocket->readAll();  
     qDebug() << QString::fromUtf8("Message reçu :") << QString::fromUtf8(data);  
 }  
-'''
+```
 ----------------------------------------------------------------------------------
 Exemple de sortie
 
